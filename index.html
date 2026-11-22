@@ -668,15 +668,34 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <article class="bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-md transition">
-                    <div class="p-6 space-y-3">
-                        <span class="text-[11px] font-bold text-dustyGreen uppercase">Здоровье печени</span>
-                        <h3 class="font-heading font-bold text-lg text-slate-900">В чем польза пасты Артишока и Силимарина?</h3>
-                        <p class="text-xs text-slate-600 leading-relaxed">
-                            Артишок из высокогорного района Далат является мощным природным гепатопротектором. Узнайте, как правильно принимать экстракт...
-                        </p>
-                        <button onclick="alert('Статья: Полное руководство по приему Артишока')" class="text-xs font-bold text-brandRed hover:underline pt-2 inline-block">Читать полностью →</button>
-                    </div>
-                </article>
+    <div class="p-6 space-y-3">
+        <span class="text-[11px] font-bold text-dustyGreen uppercase">Печень • Желчный • ЖКТ</span>
+        <h3 class="font-heading font-bold text-lg text-slate-900">Вытяжка артишока из Далата: генеральная уборка для печени, желчного и ЖКТ</h3>
+        <p class="text-xs text-slate-600 leading-relaxed">
+            Главный секрет вьетнамского долголетия. Узнайте, как концентрированная смола высокогорного артишока запускает мягкий детокс, спасает от тяжести после еды и возвращает организму легкость.
+        </p>
+
+        <!-- Скрытый полный текст статьи -->
+        <div id="article-artichoke" class="hidden pt-4 mt-4 border-t border-slate-100 space-y-3 text-xs text-slate-700 leading-relaxed">
+            <p>Если спросить во Вьетнаме, какое средство должно быть в каждом доме для идеального пищеварения и чистой кожи, вам без раздумий назовут <strong>артишок из высокогорного Далата</strong>. Это не просто чай в пакетиках, а густая концентрированная смола из свежих соцветий и листьев, в которой сила растения собрана на максимум.</p>        
+            <p>Всё дело в уникальном природном комплексе — <strong>цинарине, силимарине и инулине</strong>. Вместе они работают как слаженная команда:</p>  
+            <p><strong class="text-slate-900">1. Мощный щит и обновление для печени</strong><br>
+            Печень каждый день принимает удар от жирной пищи, стрессов, лекарств и экологии. Артишок запускает естественную регенерацию её клеток и помогает фильтровать токсины, не перегружая организм. После курса приема уходит хроническая усталость, а кожа приобретает свежий вид.</p> 
+            <p><strong class="text-slate-900">2. Идеальная работа желчного пузыря без застоя</strong><br>
+            Густая смола обладает мягким, но уверенным желчегонным действием. Она предотвращает застой желчи, помогает ей вовремя поступать в кишечник и расщеплять жиры. Уже в первые дни исчезает горечь во рту, тяжесть в правом подреберье и дискомфорт после плотного ужина.</p>    
+            <p><strong class="text-slate-900">3. Комфорт в ЖКТ и здоровый микробиом</strong><br>
+            Благодаря высокому содержанию природного пребиотика инулина, артишок работает как «топливо» для полезной микрофлоры кишечника. Он убирает вздутие, налаживает регулярное и мягкое пищеварение и помогает усваивать витамины.</p>  
+            <p class="bg-slate-50 p-3 rounded-xl border border-slate-100"><strong class="text-slate-900">Как принимать для максимального эффекта:</strong><br>
+            Растворите небольшую горошину пасты (около 1/4 чайной ложки) в стакане теплой воды. Пейте за 15–20 минут до еды 2–3 раза в день. Насыщенный травянисто-терпкий вкус с легкой природной сладостью сразу выдает натуральный концентрат без капли химии.</p>
+        </div>
+
+        <button onclick="const el = document.getElementById('article-artichoke'); el.classList.toggle('hidden'); this.innerText = el.classList.contains('hidden') ? 'Читать полностью →' : 'Свернуть статью ↑';" 
+                class="text-xs font-bold text-brandRed hover:underline pt-2 inline-block">
+            Читать полностью →
+        </button>
+    </div>
+</article>
+
 
                 <article class="bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-md transition">
                     <div class="p-6 space-y-3">
