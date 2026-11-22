@@ -994,7 +994,7 @@
         // Render Cosmetics Page Grid
         function renderCosmeticsProducts() {
             const container = document.getElementById('cosmetics-products-grid');
-            const cosmetics = productsDB.filter(p => p.category === 'Косметика' || p.category === 'Натуральные масла');
+           const cosmetics = productsDB.filter(p => p.category === 'Косметика' || p.category === 'Косметика и уход' || p.category === 'Натуральные масла');
             container.innerHTML = cosmetics.map(p => createProductCardHTML(p)).join('');
         }
 
